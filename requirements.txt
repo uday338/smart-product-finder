@@ -1,0 +1,17 @@
+# core
+pandas>=2.0
+langchain-core>=0.3
+langchain-text-splitters>=0.3
+langchain-chroma>=0.2
+chromadb>=0.5          # vector DB + the ONNX MiniLM embedding model (no torch needed)
+rank-bm25>=0.2.2       # keyword (BM25) baseline
+fastapi>=0.110
+uvicorn>=0.29
+python-dotenv>=1.0
+pytest>=8.0
+
+# pick ONE LLM provider (optional, the app works without any of them):
+# langchain-anthropic   # SPF_LLM=anthropic  + ANTHROPIC_API_KEY
+# langchain-openai      # SPF_LLM=openai     + OPENAI_API_KEY
+# langchain-ollama      # SPF_LLM=ollama     (free, runs locally)
+# langchain-huggingface # SPF_EMBEDDINGS=hf  (sentence-transformers models)
